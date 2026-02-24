@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naveen AI Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('team')">Team</button>
+    <button onclick="showSection('resources')">Resources</button>
+    <button onclick="showSection('project')">Project</button>
+    <button onclick="showSection('host')">Host</button>
+</div>
+
+<!-- HOME PAGE -->
+<div id="home" class="section active">
+    <div class="glass">
+        <h1 class="glow">Welcome Naveen.V</h1>
+        <p>B.Tech - Artificial Intelligence and Data Science</p>
+        <p>Priyadharshini Engineering College</p>
+
+        <p>
+        Artificial Intelligence projects are shaping the future with
+        automation, deep learning, neural networks and predictive analytics.
+        </p>
+
+        <input type="text" id="username" placeholder="Enter Username to View Project">
+        <button onclick="login()">Enter</button>
+    </div>
+</div>
+
+<!-- TEAM PAGE -->
+<div id="team" class="section">
+    <div class="glass">
+        <h2>Team Members</h2>
+        <div id="teamList"></div>
+
+        <h3>Add Team Member</h3>
+        <input type="text" id="teamName" placeholder="Name">
+        <input type="text" id="teamRole" placeholder="Role">
+        <input type="text" id="teamDesc" placeholder="Description">
+        <button onclick="addTeam()">Add</button>
+    </div>
+</div>
+
+<!-- RESOURCES PAGE -->
+<div id="resources" class="section">
+    <div class="glass">
+        <h2>Resources</h2>
+        <div id="resourceList"></div>
+
+        <h3>Add Resource</h3>
+        <input type="text" id="resTitle" placeholder="Title">
+        <input type="text" id="resDesc" placeholder="Description">
+        <button onclick="addResource()">Add</button>
+    </div>
+</div>
+
+<!-- PROJECT PAGE -->
+<div id="project" class="section">
+    <div class="glass">
+        <h2>Project Details</h2>
+        <div id="projectList"></div>
+
+        <h3>Add Project Detail</h3>
+        <input type="text" id="projTitle" placeholder="Title">
+        <input type="text" id="projDesc" placeholder="Description">
+        <button onclick="addProject()">Add</button>
+    </div>
+</div>
+
+<!-- HOST PAGE -->
+<div id="host" class="section">
+    <div class="glass">
+        <h2>Host Dashboard</h2>
+        <input type="password" id="hostPass" placeholder="Enter Host Password">
+        <button onclick="viewUsers()">View Users</button>
+        <button onclick="clearUsers()">Clear Users</button>
+        <div id="userData"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

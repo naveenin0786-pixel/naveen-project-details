@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding: 10px;
+}
+
+.navbar button {
+    margin: 5px;
+    padding: 10px;
+    background: cyan;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section {
+    display: none;
+    padding: 40px;
+}
+
+.active {
+    display: block;
+}
+
+.glass {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    animation: fadeIn 1.5s;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+.glow {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px cyan; }
+    to { text-shadow: 0 0 30px white; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
